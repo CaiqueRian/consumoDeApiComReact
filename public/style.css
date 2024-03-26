@@ -1,0 +1,102 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#root{
+    height: 100vh;
+    background-color: rgb(0, 68, 255);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    grid-area: titulo;
+    text-align: center;
+}
+
+#nomeLabel{
+    grid-area: nome;
+}
+
+#emailLabel{
+    grid-area: email;
+}
+
+#senhaLabel{
+    grid-area: senha;
+}
+
+#cepLabel{
+    grid-area: cep;
+}
+
+#ruaLabel{
+    grid-area: rua;
+}
+
+#numeroLabel{
+    grid-area: numero;
+}
+
+#bairroLabel{
+    grid-area: bairro;
+}
+
+#cidadeLabel{
+    grid-area: cidade;
+}
+
+.inputPadrao {
+    padding: 4px ;
+    padding-right: 10rem;
+    margin-top: 6px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+.blocoPrincipal{
+    display: grid;
+    grid-template: 
+    "titulo titulo titulo" 70px
+    "nome email senha" 70px
+    "cep rua numero" 70px
+    "bairro cidade estado" 70px
+    "btn btn btn" 35px
+    /auto auto auto
+    ;
+    column-gap: 30px;
+    color: white;
+    font-family: monospace  ;
+}
+
+label{
+    font-size: 16.5px;
+    
+}
+
+#title{
+    font-size: 40px;
+}
+
+.botao{
+
+    grid-area: btn;
+    display: grid;
+    justify-content: center;
+}
+
+.btn{
+    padding: 7px 29px;
+    border-radius: 4px;
+    border: none;
+    background-color: white;
+}
+
+.btn:active{   
+    background-color: rgb(207, 207, 207); 
+    border: 4px solid rgb(184, 184, 184);
+}
